@@ -65,9 +65,14 @@ const Home = () => {
             </tr>
             ))
             ) : (
-            <tr>
-                <td colSpan="4">No data available</td>
-            </tr>
+              dataElem.map((elem, index) => (
+                <tr key={index}>
+                    <td>{elem.userId}</td>
+                    <td>{elem.id}</td>
+                    <td>{elem.title}</td>
+                    <td>{elem.body}</td>
+                </tr>
+                ))
         )}
         </tbody>
       </table>
