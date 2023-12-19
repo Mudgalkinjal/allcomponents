@@ -1,3 +1,21 @@
 #mainComp {
   margin: 2rem;
 }
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+}
+
+/* Style for the grid items (cells) */
+.grid-item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+#inputGridClass {
+  margin-bottom: 2rem;
+}
