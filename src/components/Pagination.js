@@ -1,4 +1,6 @@
 import { useState } from "react";
+import '../styles/App.css';
+
 
 export default function Pagination(props) {
     const { sliderValue, itemsPerPage, onPageChange } = props;

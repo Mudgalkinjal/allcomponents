@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from '../components/Slider';
 import Pagination from '../components/Pagination';
-import '../App.css';
+import '../styles/App.css'
 
 const Home = () => {
   const [dataElem, setDataElem] = useState([]);

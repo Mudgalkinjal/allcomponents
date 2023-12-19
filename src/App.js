@@ -1,10 +1,10 @@
 
-import './App.css'
 import HeaderComp from './components/HeaderComp'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Games from './pages/Games'
+import './styles/App.css'
 
 function App() {
 

@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Games.css'
+import Tictactoe from '../components/Games/Tictactoe'
 
 const Games = () => {
-    return (<div>Games</div>)
+    return (
+            <div id="mainComp">
+                <Tictactoe />
+            </div>
+    )
 }
 
 export default Games;
