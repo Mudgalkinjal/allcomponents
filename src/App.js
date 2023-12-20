@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Games from './pages/Games'
+import Datatable from './pages/Datatable'
+
 import './styles/App.css'
 
 function App() {
 
-  const navbarItems = [{ name: 'Homepage', page: 'Home' }, { name: 'Games', page: 'Games' }];
+  const navbarItems = [{ name: 'Homepage', page: 'Home' }, { name: 'Games', page: 'Games' }, { name: 'Datatable', page: 'Datatable' }];
 
   return (
     <Router>
@@ -18,7 +20,9 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" exact element={<Home/>} />
-        <Route path="/Games" exact element={<Games/>} />
+          <Route path="/Games" exact element={<Games />} />
+          <Route path="/Datatable" exact element={<Datatable/>} />
+
       </Routes>
     </div>
   </Router>

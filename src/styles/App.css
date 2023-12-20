@@ -90,3 +90,20 @@ tr:hover {
 #pagination {
   margin: 2rem;
 }
+
+#carouselContainer {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#carouselContainer button {
+  margin: 1rem;
+  height: 2rem;
+}
+
+#carouselContainer img {
+  width: 80rem;
+  height: 16rem;
+  border: 1px solid black;
+}
