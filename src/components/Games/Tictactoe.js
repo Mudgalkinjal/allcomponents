@@ -15,12 +15,10 @@ export default function Tictactoe() {
 
     function handleClick(e) {
         const clickedItem = e.target;
-        console.log(toggleElem);
         clickedItem.textContent = toggleElem;
         setToggleElem('X')
         // setToggleElem((prevToggleElem) => (prevToggleElem === 'O' ? 'X' : 'O'));
       }
-      
 
       // Generate the grid dynamically
   const generateGrid = () => {
