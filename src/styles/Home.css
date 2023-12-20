@@ -1,0 +1,25 @@
+#tabsContainer {
+  display: flex;
+  margin-left: 6rem;
+  width: 20rem;
+}
+
+#tabsContainer div {
+  width: 18rem;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+#tabsContainer div:hover {
+  background-color: gray;
+  cursor: pointer;
+  color: white;
+}
+
+#contentContainer {
+  display: flex;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  width: 20rem;
+}

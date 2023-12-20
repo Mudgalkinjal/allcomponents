@@ -1,6 +1,7 @@
 // Home.js
 import React, { useEffect, useState } from 'react';
 import Carousel from '../components/Home/Carousel';
+import Tabs from '../components/Home/Tabs';
 
 import '../styles/App.css'
 
@@ -24,7 +25,10 @@ const Home = () => {
   })
  
   return (
-    <div><Carousel imgData={dataImg} /></div>
+    <div>
+      <Carousel imgData={dataImg} />
+      <Tabs />
+    </div>
   );
 };
 
