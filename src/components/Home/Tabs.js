@@ -1,5 +1,6 @@
 import '../../styles/Home.css';
 import React, { useState } from 'react'
+import Accordion from './Accordion'
 
 export default function Tabs() {
 
@@ -18,7 +19,7 @@ export default function Tabs() {
             ))}
         </div>
         <div id="contentContainer">
-                <div>Content {tabNum}</div>
+                <div><Accordion tabNum={tabNum} /></div>
         </div>
     </div>
     )
