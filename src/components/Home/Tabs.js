@@ -32,7 +32,7 @@ export default function Tabs() {
     <div>
         <div id="tabsContainer">
             {arr.map((elem,index) => (
-                <div style={elem === tabNum ? { backgroundColor: 'gray' } : {}} key={index} onClick={()=>handleTabClick(elem,index)}>Tab {elem}</div>
+                <div style={elem === tabNum ? { backgroundColor: '#3498db', color: 'white' } : {}} key={index} onClick={()=>handleTabClick(elem,index)}>Tab {elem}</div>
             ))}
         </div>
         <div id="contentContainer" >

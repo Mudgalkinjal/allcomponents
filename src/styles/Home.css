@@ -12,7 +12,7 @@
 }
 
 #tabsContainer div:hover {
-  background-color: gray;
+  background-color: #3498db;
   cursor: pointer;
   color: white;
 }
@@ -27,4 +27,51 @@
 #accComponent button {
   text-align: left;
   width: 100%;
+}
+
+.accordion-container {
+  width: 100%;
+}
+
+.accComponent {
+  margin-bottom: 10px;
+}
+
+.accComponent p {
+  width: 80%;
+  font-size: medium;
+}
+
+button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add these styles to your stylesheet */
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#tabsContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#tabsContainer div {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 0.4rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#contentContainer {
+  margin-top: 20px;
 }

@@ -26,7 +26,7 @@
   font-size: 1rem;
   display: flex;
   height: 2rem;
-  background-color: rgb(134, 243, 243);
+  background-color: #9ccbeb;
   padding-left: 8rem;
   width: 100%;
 }
@@ -50,7 +50,7 @@
 }
 
 #navbar .active {
-  text-decoration: underline;
+  background-color: #3498db;
 }
 
 .custom-link {

@@ -17,7 +17,7 @@ export default function Accordion(props) {
   const accData3 = accData.slice(equalizer + equalizer, accData.length);
     
     function handleClick(e) {
-        setKeyNum(e.target.id)
+        setKeyNum(e.target.id);
     }
 
   useEffect(() => {
