@@ -5,7 +5,7 @@ import Accordion from './Accordion'
 export default function Tabs() {
 
     const [tabNum, setTabNum] = useState(1);
-    const [accData, setAccData ] = useState([])
+    const [accData, setAccData] = useState([]);
     const arr = [1, 2, 3];
 
     function handleTabClick(e) {
@@ -17,16 +17,12 @@ export default function Tabs() {
             const data = await fetch('https://jsonplaceholder.typicode.com/comments?_start=0&_limit=10').then(response => {
                 return response.json();
             })
-    
             setAccData(data);
         }
-
         if (accData.length === 0) {
             fetchDataForAccordion();
         }
-
     },[accData])
-
 
     return (
     <div>

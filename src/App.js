@@ -5,12 +5,18 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Games from './pages/Games'
 import Datatable from './pages/Datatable'
+import TodoList from './components/TodoList';
 
 import './styles/App.css'
 
 function App() {
 
-  const navbarItems = [{ name: 'Homepage', page: 'Home' }, { name: 'Games', page: 'Games' }, { name: 'Datatable', page: 'Datatable' }];
+  const navbarItems = [
+    { name: 'Homepage', page: 'Home' },
+    { name: 'Games', page: 'Games' },
+    { name: 'Datatable', page: 'Datatable' },
+    { name: 'TodoList', page: 'TodoList'}
+  ];
 
   return (
     <Router>
@@ -21,7 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Home" exact element={<Home/>} />
           <Route path="/Games" exact element={<Games />} />
-          <Route path="/Datatable" exact element={<Datatable/>} />
+          <Route path="/Datatable" exact element={<Datatable />} />
+          <Route path="/TodoList" exact element={<TodoList />} />
 
       </Routes>
     </div>

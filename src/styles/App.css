@@ -107,3 +107,13 @@ tr:hover {
   height: 16rem;
   border: 1px solid black;
 }
+
+#toDoContainer,
+#listingTasks {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#toDoContainer * {
+  margin: 1rem;
+}
