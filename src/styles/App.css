@@ -114,6 +114,15 @@ tr:hover {
   margin-left: 4rem;
 }
 
+#listingTasks ul {
+  display: flex;
+}
+
 #toDoContainer * {
   margin: 1rem;
+}
+
+#secondary-Btn {
+  padding: 0.2rem;
+  margin-left: 1rem;
 }
