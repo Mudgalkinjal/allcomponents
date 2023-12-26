@@ -6,7 +6,7 @@ export default function TodoList() {
     const [msg, setMsg] = useState('');
 
     useEffect(() => {
-        console.log(list); // Log the updated state when it changes
+        
     }, [list]);
 
     function handleList(event) {
@@ -35,12 +35,14 @@ export default function TodoList() {
                 index === strInd ? { ...item, completed: true } : item
             )
         );
+        setMsg('Task Completed')
     }
 
     function handleDelete(delInd) {
         setList((prevList) =>
             prevList.filter((item, index)=>index!==delInd)
         );
+        setMsg('Task Deleted')
     }
 
     return (
