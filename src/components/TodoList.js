@@ -43,6 +43,7 @@ export default function TodoList() {
             prevList.filter((item, index)=>index!==delInd)
         );
         setMsg('Task Deleted')
+        console.log('deleted')
     }
 
     return (
@@ -54,12 +55,14 @@ export default function TodoList() {
             </div>
             <div id="listingTasks">
                 {list.map((elem, index) => (
-                    <ul onClick={() => handleStrike(index)} key={index}>
-                        <li style={{ textDecoration: elem.completed ? 'line-through' : 'none' }}>
-                            {elem.task}
-                        </li>
-                        <button onClick={()=>handleDelete(index)} id="secondary-Btn">Delete</button>
-                    </ul>
+                    <div key={index}>
+                        <ul onClick={() => handleStrike(index)}>
+                            <li style={{ textDecoration: elem.completed ? 'line-through' : 'none' }}>
+                                {elem.task}
+                            </li>
+                        </ul>
+                        <button onClick={() => handleDelete(index)} id="secondary-Btn">Delete</button>
+                    </div>
                 ))}
             </div>
         </div>

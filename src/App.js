@@ -29,7 +29,6 @@ function App() {
           <Route path="/Games" exact element={<Games />} />
           <Route path="/Datatable" exact element={<Datatable />} />
           <Route path="/TodoList" exact element={<TodoList />} />
-
       </Routes>
     </div>
   </Router>

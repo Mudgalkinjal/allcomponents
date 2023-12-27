@@ -47,7 +47,7 @@ export default function Tictactoe() {
   };
 
   // Call the generateGrid function when the component mounts
-  React.useEffect(() => {
+  useEffect(() => {
     generateGrid();
   }, [numRows, numCols]);
     
