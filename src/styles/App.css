@@ -127,3 +127,7 @@ tr:hover {
   margin-bottom: 1rem;
   padding: 0.2rem;
 }
+
+#infiniteScroll {
+  margin: 4rem;
+}
