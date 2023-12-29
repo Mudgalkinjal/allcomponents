@@ -23,7 +23,6 @@ export default function InfiniteScroll() {
         const fetchDataAsync = async () => {
             await fetchData();
         };
-
         fetchDataAsync();
     }, [start, end]);
 
