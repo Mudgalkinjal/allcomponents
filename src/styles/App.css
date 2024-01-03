@@ -135,3 +135,12 @@ tr:hover {
 #formComponent {
   margin: 4rem;
 }
+
+#formComponent div {
+  margin: 2rem;
+}
+
+#formComponent div label {
+  display: inline-block;
+  min-width: 12rem;
+}
